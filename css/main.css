@@ -1,0 +1,63 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  text-align: center;
+}
+
+.container{
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.row::before,
+.row::after{
+  content: " ";
+  display: table;
+}
+
+.row::after{
+  clear: both;
+}
+
+[class*="col-"]{ /* menciona que todas las clases que empiece con la letas col aplicacar los estilos*/
+  float: left;
+  min-height: 50px;
+  margin: 1%;
+}
+
+
+.col-1{
+  width: 6.33%; /*otra forma de calcular es con
+  width: calc (8.33% - 20px); el 20px son del gutters este puede
+  cambiar depende del tamaño del gutters que se desea*/  
+  background-color: yellow;
+}
+
+.col-2{
+  width: 14.66%;
+  background-color: #a3e889;
+}
+
+.col-3{
+  width: 22.99%;
+  background-color: #60e8ec;
+}
+
+.col-4{
+  width: 31.32%;
+  background-color: #34a3eb;
+}
+
+.col-5{
+  width: 47.98%;
+  background-color: #b931e9;
+}
+
+.col-6{
+  width: 98%;
+  background-color: #eb4cc3;
+}
